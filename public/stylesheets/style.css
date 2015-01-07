@@ -1,0 +1,90 @@
+body {
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+
+li.skill.selected {
+  font-weight: bold;
+  background-color: #5cb85c;
+}
+li.filter.selected {
+  font-weight: bold;
+  background-color: #d9534f;
+}
+li.place.selected {
+  font-weight: bold;
+  background-color: #428bca;
+}
+li.place {
+  min-height: 75px;
+  padding-top: 25px;
+}
+#searchbar {
+  padding: 50px 0;
+}
+.tweet {
+  display: block;
+  height: 300px;
+  padding: 20px;
+  position: relative;
+}
+
+li {
+  list-style: none;
+  background-color: #333;
+  color: white;
+  height: 40px;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: 0.4s;
+}
+li:hover {
+  transition: 0.4s;
+  background-color: #666;
+  color: white;
+}
+h2 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+img.avatar {
+  display: block;
+  margin: 0 auto;
+  padding: 25px 0 5px 0;
+}
+
+h4 {
+  text-align: center;
+}
+
+p.comment {
+  line-height: 1.75em;
+  padding: 10px;
+}
+
+p.date {
+  text-align: right;
+  padding-right: 10px;
+  bottom: 0;
+}
+
+.item {
+  background-color: #333;
+  color: white;
+  height: 40px;
+  text-align: center;
+  padding: 10px 0;
+}
+#searchButton {
+  padding-top: 50px;
+}

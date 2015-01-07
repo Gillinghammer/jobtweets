@@ -1,0 +1,34 @@
+extends layout
+
+block content
+    #hero.jumbotron
+      h1 JobTweets
+      p.intro Find developer jobs easily on twitter!
+    // Wrapper
+    #wrapper
+        // SKILLS SECTION
+        #skills.col-xs-12.col-md-6
+            h2 Select your skills
+            ul
+              each val in skills
+                li.skill.col-xs-6.col-md-3= val
+        // FILTERS SECTION
+        #filters.col-xs-12.col-md-6
+            h2 Filter out these skills
+            ul
+              each val in skills
+                li.filter.col-xs-6.col-md-3= val
+        #places.col-xs-12.col-md-12
+          h2 Select a location
+          ul
+            li.place.col-xs-4.col-md-4 San Francisco
+            li.place.col-xs-4.col-md-4 New York City
+            li.place.col-xs-4.col-md-4 Boston
+            li.place.col-xs-4.col-md-4 Chicago
+            li.place.col-xs-4.col-md-4 Austin
+            li.place.col-xs-4.col-md-4 London
+        #searchbar.col-xs-12.col-md-12
+            #query
+            #searchButton.col-xs-12.col-md-12
+              button#btnSearch.btn.btn-primary.btn-lg Search
+        #results.col-xs-12.col-md-12

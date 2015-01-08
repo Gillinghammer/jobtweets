@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res) {
 
-  skills = ['JavaScript', 'Ruby', 'Rails', 'Python', 'Django', 'HTML/CSS', 'php', 'Java', "C++", 'Node.js', 'AngularJS', 'Fullstack']
+  skills = ['JavaScript', 'Ruby', 'Rails', 'Python', 'HTML/CSS', 'php', 'Java', 'Node.js']
 
   res.render('index', skills);
 });

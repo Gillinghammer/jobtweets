@@ -11,6 +11,11 @@ a {
   color: #999;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 li.skill.selected {
   font-weight: bold;
   background-color: #5cb85c;

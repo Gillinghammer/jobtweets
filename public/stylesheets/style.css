@@ -83,6 +83,7 @@ p.date {
   font-size: 2em;
   text-align: left;
   padding: 10px 0;
+  min-width: 180px;
 }
 #searchButton {
   padding-top: 50px;

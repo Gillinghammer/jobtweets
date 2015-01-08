@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res) {
 
-  skills = ['JavaScript', 'Ruby', 'Rails', 'Python', 'HTML/CSS', 'php', 'Java', 'Django']
+  skills = ['JavaScript', 'Ruby', 'Rails', 'Python', 'Django', 'HTML/CSS', 'php', 'Java', "C++", 'Node.js', 'AngularJS', 'Fullstack']
 
   res.render('index', skills);
 });
@@ -26,7 +26,7 @@ router.get('/results', function(req, res) {
 
   T.get('search/tweets', { q: twitterQuery, count: 18 }, function(err, data, response) {
     //respond with json
-    console.log(data["statuses"]);
+    // console.log(data["statuses"]);
     res.json(data["statuses"]);
     });
 

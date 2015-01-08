@@ -75,9 +75,9 @@ function toggleFilter(event) {
 function updateQuery(skillList) {
   $('#query').html('');
   $.each(skillList, function( index, value) {
-    $('#query').append('<div class="item col-xs-2 col-md-2">' + skillList[index] + '</div>')  
+    $('#query').append('<div class="item col-xs-3 col-md-3">' + skillList[index] + '</div>')  
   });
-  $('#query').append('<div class="item col-xs-2 col-md-2">' + place + '</div>')
+  $('#query').append('<div class="item col-xs-3 col-md-3">' + place + '</div>')
 };
 
 function searchTwitter(event) {
@@ -87,11 +87,11 @@ function searchTwitter(event) {
     $( "#results" ).html("");
     $( "#results" ).append("<h2>Tweets</h2>");
     console.log("SKILL LIST: ", skillList);
-    searchQuery = "job AND " + skillList.join(" OR ") + " OR #" + skillList.join(" OR #") +" " + place + " " + " -" + filterList.join(" -");
+    searchQuery = skillList.join(" OR ") + " OR #" + skillList.join(" OR #") + " AND "  + "job AND " + place + " AND " + " -" + filterList.join(" -");
     console.log("searchQuery: ", searchQuery);
     $.getJSON( '/results', { data: searchQuery }).done( function( tweets ) {
         // Stick our user data array into a userlist variable in the global object
-        console.log(tweets);
+        // console.log(tweets);
 
         $.each(tweets, function( index, value ) {
             console.log(tweets[index].text);

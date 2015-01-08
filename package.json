@@ -1,9 +1,9 @@
 {
   "name": "application-name",
-  "version": "0.0.1",
+  "version": "0.0.1-5",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "express": "~4.0.0",
@@ -19,5 +19,9 @@
     "nodemon": "*",
     "bootstrap": "~3.3.1",
     "moment": "~2.8.4"
+  },
+  "subdomain": "jobtweets",
+  "engines": {
+    "node": "0.10.x"
   }
 }

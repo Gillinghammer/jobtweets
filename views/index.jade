@@ -8,13 +8,13 @@ block content
     #wrapper
         // SKILLS SECTION
         #skills.col-xs-12.col-md-6
-            h2 Select your skills
+            h2 Select skills to search for
             ul
               each val in skills
                 li.skill.col-xs-6.col-md-3= val
         // FILTERS SECTION
         #filters.col-xs-12.col-md-6
-            h2 Filter out these skills
+            h2 Filter out any of these skills
             ul
               each val in skills
                 li.filter.col-xs-6.col-md-3= val
@@ -26,7 +26,10 @@ block content
             li.place.col-xs-4.col-md-4 Boston
             li.place.col-xs-4.col-md-4 Chicago
             li.place.col-xs-4.col-md-4 Austin
+            li.place.col-xs-4.col-md-4 Seattle
             li.place.col-xs-4.col-md-4 London
+            li.place.col-xs-4.col-md-4 Amsterdam
+            li.place.col-xs-4.col-md-4 Berlin
         #searchbar.col-xs-12.col-md-12
             #query
             #searchButton.col-xs-12.col-md-12

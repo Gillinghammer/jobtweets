@@ -41,9 +41,9 @@ li {
   list-style: none;
   background-color: #333;
   color: white;
-  height: 40px;
+  height: 75px;
   text-align: center;
-  padding: 10px 0;
+  padding: 25px 0;
   cursor: pointer;
   transition: 0.4s;
 }
@@ -79,10 +79,9 @@ p.date {
 }
 
 .item {
-  background-color: #333;
-  color: white;
-  height: 40px;
-  text-align: center;
+  color: #333;
+  font-size: 2em;
+  text-align: left;
   padding: 10px 0;
 }
 #searchButton {
